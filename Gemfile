@@ -44,7 +44,8 @@ end
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
-
+gem 'taps', '~> 0.3.23'
+gem 'aws-s3', :require => 'aws/s3'
 
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 0.9'

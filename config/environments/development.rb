@@ -1,6 +1,12 @@
 Finks::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # Amazon s3
+  Refinery.s3_backend = true
+  ENV['S3_KEY']='AKIAIOL3STOCQEONPM6A'
+  ENV['S3_SECRET']='GMCi6fBe5ABiqWjmk3A2e0H8S6BQHfP/HsyoSqvU'
+  ENV['S3_BUCKET']='finks_production'
+  
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
   # since you don't have to restart the webserver when you make code changes.

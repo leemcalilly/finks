@@ -1,6 +1,11 @@
 Finks::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  # Amazon s3
+  Refinery.s3_backend = true
+  ENV['S3_KEY']='AKIAIOL3STOCQEONPM6A'
+  ENV['S3_SECRET']='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'
+  ENV['S3_BUCKET']='finks_production'
+  
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.cache_classes = true
