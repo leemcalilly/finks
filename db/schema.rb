@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110509022855) do
+ActiveRecord::Schema.define(:version => 20110509024639) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
@@ -52,6 +52,16 @@ ActiveRecord::Schema.define(:version => 20110509022855) do
 
   add_index "blog_posts", ["id"], :name => "index_blog_posts_on_id"
 
+  create_table "image_pages", :id => false, :force => true do |t|
+    t.integer "image_id"
+    t.integer "page_id"
+    t.integer "position"
+    t.text    "caption"
+  end
+
+  add_index "image_pages", ["image_id"], :name => "index_image_pages_on_image_id"
+  add_index "image_pages", ["page_id"], :name => "index_image_pages_on_page_id"
+
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -62,6 +72,26 @@ ActiveRecord::Schema.define(:version => 20110509022855) do
     t.datetime "updated_at"
     t.string   "image_uid"
     t.string   "image_ext"
+  end
+
+  create_table "inquiries", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "spam",       :default => false
+  end
+
+  add_index "inquiries", ["id"], :name => "index_inquiries_on_id"
+
+  create_table "inquiry_settings", :force => true do |t|
+    t.string   "name"
+    t.text     "value"
+    t.boolean  "destroyable"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "page_part_translations", :force => true do |t|

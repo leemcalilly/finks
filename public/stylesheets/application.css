@@ -82,7 +82,7 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a, a:active, a:visited { color: #607890; }
+a, a:active, a:visited { color: #556f56; }
 a:hover { color: #036; }
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -392,8 +392,9 @@ footer {
 
 .inquiries form .actions {
 	float: left;
-	width: 100%;
-	margin: 10px 0 0 100px;
+	width: auto;
+	padding: 5px 5px 5px 5px;
+	margin: 0 0 0 0;
 }
 
 #inquiry_submit {
@@ -412,6 +413,10 @@ footer {
 	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#body_content_right p {
+	margin: 0 0 0 0;
 }
 
 

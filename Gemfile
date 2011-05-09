@@ -48,7 +48,6 @@ gem 'taps', '~> 0.3.23'
 gem 'aws-s3', :require => 'aws/s3'
 
 # Specify additional Refinery CMS Engines here (all optional):
-gem 'refinerycms-music'
 gem 'refinerycms-inquiries',    '~> 0.9'
 gem 'refinerycms-blog',         '~> 1.3'
 gem 'refinerycms-page-images',  '~> 1.0'
