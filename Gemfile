@@ -48,13 +48,15 @@ gem 'taps', '~> 0.3.23'
 gem 'aws-s3', :require => 'aws/s3'
 
 # Specify additional Refinery CMS Engines here (all optional):
-# gem 'refinerycms-inquiries',    '~> 0.9'
+gem 'refinerycms-music'
+gem 'refinerycms-inquiries',    '~> 0.9'
+gem 'refinerycms-blog',         '~> 1.3'
+gem 'refinerycms-page-images',  '~> 1.0'
+
 # gem 'refinerycms-news',         '~> 1.0'
 # gem 'refinerycms-portfolio',    '~> 0.9.9'
 # gem 'refinerycms-theming',      '~> 1.0'
 # gem 'refinerycms-search',       '~> 0.9.8'
-# gem 'refinerycms-blog',         '~> 1.3'
-# gem 'refinerycms-page-images',  '~> 1.0'
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
